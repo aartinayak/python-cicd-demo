@@ -1,12 +1,3 @@
-# Create new folders
-mkdir -p .github/workflows
-
-# Create main.yml file
-touch .github/workflows/main.yml
-
-# Create requirements.txt
-touch requirements.txt
-
 name: Python CI/CD
 
 on:
@@ -36,3 +27,4 @@ jobs:
       - name: Run tests
         run: |
           python -m unittest discover
+
